@@ -38,10 +38,10 @@ data_quality = False
 with st.sidebar: 
     ##st.image("https://cdn.prod.website-files.com/65973bba7be64ecd9a0c2ee8/6597409a88b276d54f037d29_logo-primary%402x.jpg")
     st.title("Suporte Saude")
-    choice = st.radio("Menu", ["Create DDM Sim", "Composabl Copilot"])
-    st.info("This application helps you Build and Run DataDrivenModel Simulations from your data.")
+    choice = st.radio("Menu", ["Relatorio Medico", "Teste", ])
+    st.info("Apllicacao para suporte medico.")
 
-if choice == "Create DDM Sim": 
+if choice == "Teste": 
     st.title("Upload Your Dataset")
     '''file = st.file_uploader("Upload Your Dataset")
     
@@ -328,8 +328,8 @@ if choice == "Create DDM Sim":
 
         
         
-if choice == "Composabl Copilot":
-    openai_api_key = st.text_input('Your OpenAI Key for ChatGPT:')
+if choice == "Relatorio Medico":
+    openai_api_key = st.text_input('OpenAI Key:')
     
     openai.api_key = openai_api_key
     # Helper functions
